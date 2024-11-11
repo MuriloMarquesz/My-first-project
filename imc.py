@@ -2,12 +2,6 @@ from reportlab.pdfgen import canvas
 from reportlab.lib.pagesizes import A4
 from reportlab.platypus import Paragraph
 
-def calcularIMC(peso, altura):
-    imc = peso / (altura) ** 2
-    imc = imc * 10000
-    imc_formatado = "{:.2f}".format(imc)
-    return imc_formatado
-
 def pdf():
     pdf = canvas.Canvas(f'./FichaCadastral{nome.strip()}.pdf', pagesize=A4)
     pdf.drawCentredString(300, 800, f'Ficha Cadastral - {nome}')
@@ -26,9 +20,12 @@ def pdf():
 print('Antes de comerçamos, precisamos de alguns dados:')
 nome = input('Digite seu nome completo: ')
 idade = int(input('Digite sua idade: '))
-peso = int(input('Digite seu peso(Kg): '))
-altura = int(input('Digite sua altura(cm): '))
-imc = calcularIMC(peso, altura)
+peso = float(input('Digite seu peso(Kg): '))
+altura = float(input('Digite sua altura(m): '))
+imc = peso / (altura ** 2)
+print(imc)
+imc = round(imc,2)
+
 pdf()
 
 
