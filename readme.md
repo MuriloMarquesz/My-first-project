@@ -4,7 +4,7 @@
 - De primeiro momento não vai ter interface, mas faz parte do projeto
 - As formatações do Pdf ainda não estão nem perto do planejado.
 - Outras atualizações serão feitas gradualmente conforme o meu aprendizado.
-- Foi inicado a criação do menu
+- Será feito uma melhor organização do código
   
 # Atualização v2.0
 - Feito a criação de uma interface gráfica:
