@@ -6,7 +6,7 @@
 - Outras atualizações serão feitas gradualmente conforme o meu aprendizado.
 - Foi inicado a criação do menu
   
-# Att v2.0
+# Atualização v2.0
 - Feito a criação de uma interface gráfica:
 
 ![Teste](./interface.png)
